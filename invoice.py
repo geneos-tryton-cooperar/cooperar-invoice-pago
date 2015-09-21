@@ -8,6 +8,7 @@ __all__ = ['Invoice']
 class Invoice(Workflow, ModelSQL, ModelView):
     'Invoice'
     __name__ = 'account.invoice'
+    convenio = fields.Many2One('convenios.convenio', 'Convenio')  
 
     #Extiendo el metodo de pago de factura
     def pay_invoice(self, amount, journal, date, description,
