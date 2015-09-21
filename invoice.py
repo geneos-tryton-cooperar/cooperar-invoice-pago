@@ -1,4 +1,4 @@
-from trytond.model import Workflow, ModelView, ModelSQL
+from trytond.model import Workflow, ModelView, ModelSQL, fields
 from trytond.pool import Pool
 import datetime
 from decimal import Decimal
